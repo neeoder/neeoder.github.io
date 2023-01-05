@@ -16,9 +16,6 @@
       // IP-Adresse des Benutzers speichern
       var userIp = getenv('REMOTE_ADDR');
 
-      <a href="https://www.ixq.de/ip.php">Ihre IP Adresse:</a> <br>
-      <a href="https://www.ixq.de" target="_blank"><img src="https://www.ixq.de/ip2.php" border="0" alt="Ihre IP Adresse"></a>
-
       
       function checkPassword() {
         // Passwort aus dem Eingabefeld abrufen
@@ -27,6 +24,8 @@
         // Wenn das Passwort korrekt ist, die IP-Adresse anzeigen
         if (password == "geheim") {
           document.getElementById("ipAddresses").innerHTML = "Ihre IP-Adresse: " + userIp;
+          <a href="https://www.ixq.de/ip.php">Ihre IP Adresse:</a> <br>
+          <a href="https://www.ixq.de" target="_blank"><img src="https://www.ixq.de/ip2.php" border="0" alt="Ihre IP Adresse"></a>
         } else {
           alert("Falsches Passwort!");
         }
