@@ -1,7 +1,12 @@
 <?php
 $password = "mein_passwort";
 
-if ($_POST["password"] == $password) {
+// Hole das übertragene Passwort aus der Query-Zeichenfolge
+$query_string = $_SERVER["QUERY_STRING"];
+parse_str($query_string, $query_params);
+$submitted_password = $query_params["password"];
+
+if ($submitted_password == $password) {
   // Speichere die IP-Adresse des Benutzers in der Datenbank
   $ip_address = $_SERVER["REMOTE_ADDR"];
   // Hier sollte man die IP-Adresse in einer Datenbank speichern.
