@@ -1,12 +1,32 @@
 <html>
-<head>
-  <title>IP Adresse speichern</title>
-</head>
-<body>
-  <form action="save_ip.php" method="get">
-  Bitte Passwort eingeben:
-  <input type="password" name="password">
-  <input type="submit" value="Absenden">
-  </form>
-</body>
+  <head>
+    <title>IP Adressen anzeigen</title>
+  </head>
+  <body>
+    <h1>IP Adressen anzeigen</h1>
+    <p>Bitte geben Sie das Passwort ein:</p>
+    <form>
+      <input type="password" id="password">
+      <button type="button" onclick="checkPassword()">Absenden</button>
+    </form>
+    <br>
+    <p id="ipAddresses"></p>
+    
+    <script>
+      // IP-Adresse des Benutzers speichern
+      var userIp = "<!-- Hier die IP-Adresse des Benutzers einfügen -->";
+      
+      function checkPassword() {
+        // Passwort aus dem Eingabefeld abrufen
+        var password = document.getElementById("password").value;
+        
+        // Wenn das Passwort korrekt ist, die IP-Adresse anzeigen
+        if (password == "geheim") {
+          document.getElementById("ipAddresses").innerHTML = "Ihre IP-Adresse: " + userIp;
+        } else {
+          alert("Falsches Passwort!");
+        }
+      }
+    </script>
+  </body>
 </html>
