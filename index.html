@@ -14,7 +14,7 @@
     
     <script>
       // IP-Adresse des Benutzers speichern
-      var userIp = "<!-- Hier die IP-Adresse des Benutzers einfügen -->";
+      var userIp = $ip = getenv('REMOTE_ADDR');
       
       function checkPassword() {
         // Passwort aus dem Eingabefeld abrufen
