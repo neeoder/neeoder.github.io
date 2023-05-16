@@ -1,45 +1,4 @@
 <html>
 <body>
-
-<h1>IP-Adressen:</h1>
-<ul id="ip-list"></ul>
-
-<script>
-var ipList = [];
-
-function saveIP(ip) {
-    fetch('save-ip.php?ip=' + ip);
-}
-
-function getIP() {
-    fetch('https://api.ipify.org?format=json')
-        .then(response => response.json())
-        .then(data => {
-            ipList.push(data.ip);
-            saveIP(data.ip);
-            updateList()
-        });
-}
-
-function updateList() {
-    var listElement = document.getElementById('ip-list');
-    for (var i = 0; i < ipList.length; i++) {
-        listElement.innerHTML += '<li>' + ipList[i] + '</li>';
-    }
-}
-
-function loadIPList() {
-    fetch('load-ip-list.php')
-        .then(response => response.json())
-        .then(data => {
-            ipList = data;
-            updateList();
-        });
-}
-
-getIP();
-loadIPList()
-</script>
-
 </body>
 </html>
