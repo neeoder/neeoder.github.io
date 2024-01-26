@@ -136,7 +136,8 @@ header {
 }
 
 .input-box input:focus~label,
-.input-box input:valid~label {
+.input-box input:valid~label,
+.input-box label.stay-up {
     top: -5px;
 }
 

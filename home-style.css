@@ -165,3 +165,12 @@ main {
     width: 100%;
     z-index: 5;
 }
+
+.parallax {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.parallax.reveal {
+    opacity: 1;
+}
