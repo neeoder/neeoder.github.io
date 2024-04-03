@@ -138,3 +138,45 @@ main {
     text-align: center;
     font-size: 1.75em;
 }
+
+.hangman-project {
+    position: absolute;
+    left: 15%;
+    top: 30%;
+    height: 280px;
+    width: 65%;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+}
+
+.hangman-project img {
+    transform: scale(0.6);
+    border-radius: 5px;
+    margin-left: -50px;
+    margin-top: -40px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 100%;
+}
+
+.description {
+    font-weight: bold;
+    color: #333;
+}
+
+.features {
+    margin-top: 10px;
+}
+
+.ai-label, .visualization-label {
+    font-weight: bold;
+    color: #f08080;
+}
+
+.features > span {
+    color: #388e3c;
+}
