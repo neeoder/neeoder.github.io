@@ -107,6 +107,30 @@ main {
     text-align: center;
 }
 
+.scroll-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #1e1b1e;
+    border-color: aqua;
+    border-width: thick;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-button ion-icon {
+    color: white;
+    font-size: 24px;
+    transform: rotate(180deg);
+}
+
 .project_text {
     color: aquamarine;
     left: 50%;

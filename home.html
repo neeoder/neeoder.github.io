@@ -26,6 +26,9 @@
             <div class="bg-text">
                 <h1>Welcome to Neeoder-code</h1>
             </div>
+            <button class="scroll-button">
+                <ion-icon name="chevron-up-outline"></ion-icon>
+            </button>
         </div>
         <div class="project_section">
             <div class="project_text">
@@ -33,6 +36,17 @@
             </div>
         </div>
     </main>
+    <script>
+        const scrollButton = document.querySelector('.scroll-button');
+        const targetSection = document.querySelector('.project_section');
+
+        scrollButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: 'smooth',
+            });
+        });
+    </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
