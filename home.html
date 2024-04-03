@@ -10,7 +10,9 @@
 </head>
 <body>
     <header>
-        <h2 class="logo">Logo</h2>
+        <a href="home.html" class="logo">
+            <h2>Logo</h2>
+        </a>
         <nav class="navigation">
             <a href="home.html">Home</a>
             <a href="#">About</a>
@@ -19,10 +21,20 @@
             <a href="login.html">Login</a>
         </nav>
     </header>
-
     <main>
         <div class="bg-text">
             <h1>Welcome to Neeoder-code</h1>
         </div>
+        <div id="mobile-message">
+            Sorry this website is not available on mobile devices
+        </div>
+        <script>
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            if (isMobile) {
+                document.getElementById('mobile-message').style.display = 'block';
+            } else {
+                document.getElementById('mobile-message').style.display = 'none';
+            }
+        </script>
     </main>
 </body>

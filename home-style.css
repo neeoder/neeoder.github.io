@@ -10,6 +10,7 @@ html {
     overflow: hidden;
 }
 
+/*
 @media (max-width: 768px) {
     body {
         display: none;
@@ -21,20 +22,25 @@ html {
 }
 
 #mobile-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: #312e31;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
+*/
 
 body {
     position: relative;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 200vh;
+    height: 100vh;
     margin: 0;
-    background-image: url("cool_bg.jpg");
+    background-image: url("images/cool_bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -57,7 +63,8 @@ header {
 }
 
 .logo {
-    font-size: 2em;
+    margin-left: -75px;
+    font-size: 1.5em;
     color: #fff;
     user-select: none;
 }
