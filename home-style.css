@@ -10,29 +10,6 @@ html {
     overflow: hidden;
 }
 
-/*
-@media (max-width: 768px) {
-    body {
-        display: none;
-    }
-
-    #mobile-message {
-        display: block;
-    }
-}
-
-#mobile-message {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #312e31;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-*/
-
 body {
     position: relative;
     justify-content: center;
@@ -60,6 +37,17 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 9999;
+}
+
+#mobile-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #312e31;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
 .logo {
