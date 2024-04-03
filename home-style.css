@@ -7,7 +7,7 @@
 
 html {
     height: 100vh;
-    overflow: hidden;
+    scroll-snap-type: y mandatory;
 }
 
 body {
@@ -17,12 +17,6 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 0;
-    background-image: url("images/cool_bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    perspective: 1px;
-    transform-style: preserve-3d;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -75,9 +69,28 @@ header {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome_section, .project_section {
+    width: 100%;
+    min-height: 100vh;
     position: relative;
-    height: 100vh;
-    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.welcome_section {
+    background-image: url("images/cool_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.project_section {
+    background-color: #1e1b1e;
 }
 
 .bg-text {
@@ -92,4 +105,12 @@ main {
     width: 100%;
     z-index: 5;
     text-align: center;
+}
+
+.project_text {
+    color: aquamarine;
+    left: 50%;
+    padding-top: 8%;
+    text-align: center;
+    font-size: 1.75em;
 }
