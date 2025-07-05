@@ -6,5 +6,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="ionicons" level="application" />
     <orderEntry type="library" name="animejs" level="application" />
+    <orderEntry type="library" name="particles" level="application" />
   </component>
 </module>
