@@ -1,0 +1,78 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --primary-color: #00c6ff;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Space Mono', monospace;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-body), serif;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+}
+
+nav .logo {
+    font-family: var(--font-heading), serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 5%;
+}
+
+.hero-title {
+    font-family: var(--font-heading), serif;
+    font-size: 5vw;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero-title .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #aaa;
+}
